@@ -38,7 +38,7 @@ def find_names_by_pinyin(pinyin):
         return "No matching names found"
 
     # 按排名对名称列表进行排序
-    names.sort(key=lambda x: x[0])
+    names.sort(key=lambda x[0]: x)
 
     # 仅返回名称，不包括排名
     return [name for score, name in names]
